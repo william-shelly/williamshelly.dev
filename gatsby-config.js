@@ -5,6 +5,12 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: "williamshelly.dev",
+    siteUrl: "https://williamshelly.dev/",
+    titleTemplate: "Freelance Front End Designer Developer · %s",
+    description: "Designing websites for a living",
+    url: "https://williamshelly.dev/",
+    image: "",
+    twitterUsername: "@williamshelly",
   },
   plugins: [
     {
@@ -21,6 +27,7 @@ module.exports = {
         trackingId: process.env.GATSBY_PLUGIN_GOOGLE_ANALYTICS,
       },
     },
+    "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-sharp",
