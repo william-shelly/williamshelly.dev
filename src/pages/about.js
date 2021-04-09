@@ -1,24 +1,15 @@
 import React from "react"
-
+import IntroArea from "../components/intro-area.js"
 import Default from "../layouts/default.js"
 
-export default function About() {
+export default function About(props) {
+    const title = "About Me"
     return (
         <Default>
-            <div className="container-fluid intro-area-container">
-                <div className="row">
-                    <div className="col-sm-12 p-0 drop-area">
-                        <div className="text-container p-5 d-flex flex-column justify-content-end justify-content-lg-center align-items-center">
-                            <p className="d-none d-lg-block text-center text-white text-shadow">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <IntroArea title={title}></IntroArea>
             <div className="container my-5">
                 <div className="row">
                     <div className="col">
-                        <h1>About Us</h1>
-
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                 </div>
