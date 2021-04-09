@@ -17,10 +17,19 @@ export default function Cheatsheets() {
             <div className="container my-5">
                 <div className="row">
                     <div className="col">
-                        <h1>Cheat Sheets</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h1>Code Cheat Sheets</h1>
+                        <p>My little repository for code snippets or little reminders for how I got stuff to work.</p>
 
                         <ul>
+                            <li>
+                                <Link to="../css">CSS</Link>
+                            </li>
+                            <li>
+                                <Link to="../git">Git</Link>
+                            </li>
+                            <li>
+                                <Link to="../gatsby">Gatsby</Link>
+                            </li>
                             <li>
                                 <Link to="../javascript">JavaScript</Link>
                             </li>
@@ -28,7 +37,7 @@ export default function Cheatsheets() {
                                 <Link to="../react">React</Link>
                             </li>
                             <li>
-                                <Link to="../gatsby">Gatsby</Link>
+                                <Link to="../swift-ui">SwiftUI</Link>
                             </li>
                         </ul>
                     </div>

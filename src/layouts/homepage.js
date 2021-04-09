@@ -7,7 +7,7 @@ import Footer from "../components/footer.js"
 // import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 
 
-export default function Default({children}) {
+export default function Homepage({children}) {
     return (
         <>
             <Header></Header>
