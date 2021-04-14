@@ -27,28 +27,43 @@ const Portfolio = ({data}) => {
 }
 
 export const query = graphql`
-  query PortfolioQuery {
-    allContentfulPortfolio {
-      edges {
-        node {
-          featuredImage {
-            file {
-              url
-            }
-            description
+query PortfolioQuery {
+  allContentfulPortfolio {
+    edges {
+      node {
+        id
+        title
+        logo {
+          file {
+            url
           }
+        }
+        logoWidth
+        link
+        featuredImage {
+          file {
+            url
+          }
+          description
           title
-          logo {
-            file {
-              url
-            }
-            id
+        }
+        image02 {
+          file {
+            url
           }
-          link
-          logoWidth
+          description
+          title
+        }
+        image03 {
+          file {
+            url
+          }
+          description
+          title
         }
       }
     }
   }
+}
 `
 export default Portfolio
