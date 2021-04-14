@@ -28,11 +28,12 @@ const Portfolio = ({data}) => {
 
 export const query = graphql`
 query PortfolioQuery {
-  allContentfulPortfolio {
+  allContentfulPortfolio(sort: {fields: order}) {
     edges {
       node {
         id
         title
+        order
         logo {
           file {
             url
@@ -55,6 +56,13 @@ query PortfolioQuery {
           title
         }
         image03 {
+          file {
+            url
+          }
+          description
+          title
+        }
+        image04 {
           file {
             url
           }
