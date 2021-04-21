@@ -13,10 +13,9 @@ export default function PortfolioPage({pageContext}) {
 						<h1>{pageContent.name}</h1>
 						{/* <p><span dangerouslySetInnerHTML={{ __html: pageContent.description.description}}></span></p> */}
 
+						{pageContent.featuredImage ? <p><span dangerouslySetInnerHTML={{ __html: pageContent.featuredImage.description}}></span></p> : undefined }
 
 						{pageContent.featuredImage ? <img src={pageContent.featuredImage.file.url} alt={pageContent.featuredImage.description} loading="lazy" /> : undefined }
-
-            {pageContent.featuredImage ? <p><span dangerouslySetInnerHTML={{ __html: pageContent.featuredImage.description}}></span></p> : undefined }
 
             {pageContent.image02 ? <img src={pageContent.image02.file.url} alt={pageContent.image02.description} loading="lazy" /> : undefined }
 

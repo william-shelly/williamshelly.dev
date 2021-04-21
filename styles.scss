@@ -21,6 +21,10 @@ body {
   color: $darkcolor;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .container {
 	font-family: $regularfont;
 }
@@ -276,6 +280,11 @@ footer {
 
   .main-nav li {
     margin: 0 .625rem;
+  }
+
+  .modal-dialog {
+    width: 100%;
+    max-width: 800px;
   }
 
 }
