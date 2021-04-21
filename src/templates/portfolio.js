@@ -13,9 +13,10 @@ export default function PortfolioPage({pageContext}) {
 						<h1>{pageContent.name}</h1>
 						{/* <p><span dangerouslySetInnerHTML={{ __html: pageContent.description.description}}></span></p> */}
 
-						{pageContent.featuredImage ? <p><span dangerouslySetInnerHTML={{ __html: pageContent.featuredImage.description}}></span></p> : undefined }
 
 						{pageContent.featuredImage ? <img src={pageContent.featuredImage.file.url} alt={pageContent.featuredImage.description} loading="lazy" /> : undefined }
+
+            {pageContent.featuredImage ? <p><span dangerouslySetInnerHTML={{ __html: pageContent.featuredImage.description}}></span></p> : undefined }
 
             {pageContent.image02 ? <img src={pageContent.image02.file.url} alt={pageContent.image02.description} loading="lazy" /> : undefined }
 
@@ -23,7 +24,7 @@ export default function PortfolioPage({pageContext}) {
 
             {pageContent.image04 ? <img src={pageContent.image04.file.url} alt={pageContent.image04.description} loading="lazy" /> : undefined }
 
-            <Link className="btn btn-secondarycolor d-sm-inline-block text-white" to={"/portfolio/" + pageContent.id}>Test {pageContent.title}</Link>
+            <Link className="btn btn-primarycolor d-sm-inline-block text-white" to={"/portfolio/" + pageContent.id}>View {pageContent.title}</Link>
 
             {pageContent.link ? <a className="btn btn-primarycolor d-sm-inline-block text-white mt-2" href={pageContent.link} target="_blank" rel="noreferrer">View {pageContent.title}</a> : undefined }
 
