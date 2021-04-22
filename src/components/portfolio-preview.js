@@ -32,8 +32,8 @@ const PortfolioPreview = ({node}) => {
           View {node.title}
         </Button>
 
-        { work.node ? <PortfolioModal node={node} /> : null }
-
+        { work && <PortfolioModal node={node} /> }
+        {/* { work ? <PortfolioModal node={node} /> : null } */}
       </div>
 
     </>
