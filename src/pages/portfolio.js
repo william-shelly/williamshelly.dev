@@ -18,7 +18,7 @@ const Portfolio = ({data}) => {
                     <div className="col-12 mb-4">
                       <div className="row">
                         {data.allContentfulPortfolio.edges.map( ({ node, index}) => (
-                          <PortfolioPreview node={node}></PortfolioPreview>
+                          <PortfolioPreview key={node.id.toString()} node={node}></PortfolioPreview>
                         ))}
                       </div>
                     </div>
