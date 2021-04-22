@@ -12,7 +12,7 @@ export default function PortfolioPreview({node}) {
 
   return (
     <>
-      <div className="menu-item-description col-12 col-lg-6 text-center d-flex justify-content-between align-items-center">
+      <div key={node.id} className="menu-item-description col-12 col-lg-6 text-center d-flex justify-content-between align-items-center">
         <h2>{node.title}</h2>
 
         {node.logo.file.url ? <img src={node.logo.file.url} className="d-flex" alt={node.title} loading="lazy" width={node.logoWidth} /> : undefined }
