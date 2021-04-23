@@ -1,14 +1,15 @@
 import React from "react"
 import { graphql } from 'gatsby'
+import SEO from '../components/seo.js'
 import IntroArea from "../components/intro-area.js"
 import PortfolioPreview from '../components/portfolio-preview.js'
-// import { Link } from "gatsby"
 import Default from "../layouts/default.js"
 
 const Portfolio = ({data}) => {
   const title = "Portfolio"
   return (
       <Default>
+        <SEO title={title}></SEO>
         <IntroArea title={title}></IntroArea>
         <div className="container my-5">
             <div className="row">

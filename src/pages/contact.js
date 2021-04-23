@@ -1,20 +1,28 @@
 import React from 'react'
-// import { graphql } from 'gatsby'
 import IntroArea from "../components/intro-area.js"
 import Default from '../layouts/default.js'
+import SEO from '../components/seo.js'
+
 
 export default function Contact() {
-    const title = "Contact Me"
+    const title = "Contact"
+    const headline = "Let's Talk!"
+    const buttonLabel = "Send Message"
+    const pageContent = "Ready to start your next project? Contact me and I will get back to you as soon as possible!"
     return (
         <Default>
-            <IntroArea title={title}></IntroArea>
+            <SEO title={title}></SEO>
+            <IntroArea title={headline}></IntroArea>
             <div className="container my-5">
                 <div className="row justify-content-center">
                     <div className="col-6">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>{pageContent}</p>
 
-                        <form name="contact" method="POST" data-netlify="true" action="/thankyou">
+                        <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" action="/thankyou">
                             <input type="hidden" name="form-name" value="contact" />
+                            <div class="hidden">
+                                <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                            </div>
                             <div className="form-group">
                                 <label htmlFor="first_name">First Name</label>
                                 <input type="text" id="first_name" name="first_name" className="form-control" placeholder="Joe" required />
@@ -41,7 +49,7 @@ export default function Contact() {
                             </div>
 
                             <div className="button-container text-right">
-                                <button className="btn btn-danger d-sm-inline-block m-0-auto align-center mr-2" type="submit">Contact Us</button>
+                                <button className="btn btn-danger d-sm-inline-block m-0-auto align-center mr-2" type="submit">{buttonLabel}</button>
                                 <input className="btn btn-danger d-sm-inline-block m-0-auto align-center" type="reset" />
                             </div>
                         </form>

@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: "williamshelly.dev",
     siteUrl: "https://williamshelly.dev/",
-    titleTemplate: "Freelance Front End Designer Developer · %s",
+    titleTemplate: "%s · Freelance Designer and Front End Developer · WilliamShelly.dev",
     description: "Designing websites for a living",
     url: "https://williamshelly.dev/",
     image: "",

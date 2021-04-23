@@ -17,13 +17,15 @@ export default function PortfolioPreview({node}) {
           {node.logo.file.url ?
           <div className="d-flex center-img project-container">
             <div className="project-logo-container p-1 bg-light rounded-lg shadow-lg">
-              <img src={node.logo.file.url}
-                className="d-flex project-logo"
-                alt={node.title}
-                loading="lazy"
-                width="100"
-                height="100"
-              />
+              <Button className="btn-light" variant="primary " onClick={handleShow}>
+                <img src={node.logo.file.url}
+                  className="d-flex project-logo"
+                  alt={node.title}
+                  loading="lazy"
+                  width="100"
+                  height="100"
+                />
+              </Button>
             </div>
           </div>
           : undefined }
@@ -44,7 +46,7 @@ export default function PortfolioPreview({node}) {
             </div>
             : undefined }
 
-            <Button variant="primary my-2" onClick={handleShow}>
+            <Button className="project-view-button" variant="primary my-2" onClick={handleShow}>
             View {node.title}
             </Button>
           </div>

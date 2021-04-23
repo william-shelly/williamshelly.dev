@@ -1,5 +1,4 @@
 import * as React from "react"
-// import { graphql } from 'gatsby'
 import Homepage from '../layouts/homepage.js'
 import SEO from '../components/seo.js'
 import hero from '../images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg'
@@ -16,10 +15,11 @@ const IndexPage = () => {
   const content2="I design and create digital stuff.";
   const photoCredit="Florian Olivo";
   const photoLink="https://unsplash.com/photos/4hbJ-eymZ1o?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink";
+  const title = "Homepage"
 
   return (
     <Homepage>
-      <SEO description="William Shelly - Front End Developer" />
+      <SEO title={title}></SEO>
       <section className="hero">
         <div className="hero-img-container">
           <img className="hero-img" src={hero} alt={heroAlt} />
