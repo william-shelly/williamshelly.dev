@@ -12,37 +12,44 @@ export default function PortfolioPreview({node}) {
 
   return (
     <>
-      <div className="menu-item-description col-12 col-lg-6 text-center d-flex justify-content-between align-items-center">
-        <h2>{node.title}</h2>
+      <div className="menu-item-description col-12 col-lg-6  d-flex flex-column flex-lg-row justify-content-between">
+        <div className="portfolio-container text-center d-flex flex-column justify-content-between align-items-center flex-fill flex-grow-1 position-relative overflow-hidden my-4">
+          {node.logo.file.url ?
+          <div className="d-flex center-img project-container">
+            <div className="project-logo-container p-1 bg-light rounded-lg shadow-lg">
+              <img src={node.logo.file.url}
+                className="d-flex project-logo"
+                alt={node.title}
+                loading="lazy"
+                width="100"
+                height="100"
+              />
+            </div>
+          </div>
+          : undefined }
 
-        {node.logo.file.url ? <img src={node.logo.file.url} className="d-flex" alt={node.title} loading="lazy" width={node.logoWidth} /> : undefined }
+          {node.featuredImage ?
+          <img src={node.featuredImage.file.url}
+            className="project-background-img d-flex w-100"
+            alt={node.featuredImage.description} loading="lazy" />
+          : undefined }
 
-        {node.featuredImage ? <img src={node.featuredImage.file.url} className="d-flex w-100 my-2" alt={node.featuredImage.description} loading="lazy" /> : undefined }
+          <div className="project-info-container position-absolute fixed-bottom py-1 px-3">
+            {node.featuredImage ?
+            <div>
+              <h2 className="fs-8">{node.title}</h2>
+              <p
+              dangerouslySetInnerHTML={{ __html: node.featuredImage.description}}>
+              </p>
+            </div>
+            : undefined }
 
-        {node.featuredImage ? <p><span dangerouslySetInnerHTML={{ __html: node.featuredImage.description}}></span></p> : undefined }
-{/* 
-        {node.image02 ? <img src={node.image02.file.url} alt={node.image02.description} loading="lazy" /> : undefined }
-
-        {node.image03 ? <img src={node.image03.file.url} alt={node.image03.description} loading="lazy" /> : undefined }
-
-        {node.image04 ? <img src={node.image04.file.url} alt={node.image04.description} loading="lazy" /> : undefined } */}
-
-        {/* <Link className="btn btn-primarycolor d-sm-inline-block text-white" to={"/portfolio/" + node.id}>View {node.title}</Link> */}
-
-        <Button variant="primary my-2" onClick={handleShow}>
-          View {node.title}
-        </Button>
-
-        {/* {node.link ? <a className="btn btn-primarycolor d-sm-inline-block text-white mt-2" href={node.link} target="_blank" rel="noreferrer">View {node.title}</a> : undefined } */}
+            <Button variant="primary my-2" onClick={handleShow}>
+            View {node.title}
+            </Button>
+          </div>
+        </div>
       </div>
-
-      {/* <PortfolioModal
-        node={node}
-        show={show}
-        onHide={handleClose}
-        backdrop="static"
-        keyboard={true}>
-      </PortfolioModal> */}
 
       <Modal
         show={show}
@@ -54,26 +61,19 @@ export default function PortfolioPreview({node}) {
           <Modal.Title><h2>{node.title}</h2></Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          {/* {node.featuredImage ? <img src={node.featuredImage.file.url} alt={node.featuredImage.description} className="w-full" loading="lazy" /> : undefined } */}
 
           {node.featuredImage ? <img src={node.featuredImage.file.url} className="w-100 my-2" alt={node.featuredImage.description} loading="lazy" /> : undefined }
 
           {node.featuredImage ? <p><span dangerouslySetInnerHTML={{ __html: node.featuredImage.description}}></span></p> : undefined }
 
-          {node.image02 ? <img src={node.image02.file.url} className="w-100 my-2" alt={node.image02.description} className="w-full" loading="lazy" /> : undefined }
+          {node.image02 ? <img src={node.image02.file.url} className="w-100 my-2" alt={node.image02.description} loading="lazy" /> : undefined }
 
-          {node.image03 ? <img src={node.image03.file.url} className="w-100 my-2" alt={node.image03.description} className="w-full" loading="lazy" /> : undefined }
+          {node.image03 ? <img src={node.image03.file.url} className="w-100 my-2" alt={node.image03.description} loading="lazy" /> : undefined }
 
-          {node.image04 ? <img src={node.image04.file.url} className="w-100 my-2" alt={node.image04.description} className="w-full" loading="lazy" /> : undefined }
+          {node.image04 ? <img src={node.image04.file.url} className="w-100 my-2" alt={node.image04.description} loading="lazy" /> : undefined }
 
-          {/* <Button variant="primary" onClick={handleShow}>
-            View {node.title}
-          </Button>
-
-          {node.link ? <a className="btn btn-primarycolor d-sm-inline-block text-white mt-2" href={node.link} target="_blank" rel="noreferrer">Go to Website</a> : undefined } */}
         </Modal.Body>
-        <Modal.Footer>
-        </Modal.Footer>
+        <Modal.Footer />
       </Modal>
     </>
   )
