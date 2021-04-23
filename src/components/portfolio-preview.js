@@ -2,12 +2,12 @@ import React, { useState } from "react";  // { useEffect, }
 import Button from 'react-bootstrap/Button';
 import PortfolioModal from '../components/portfolio-modal.js'
 
-
 const PortfolioPreview = ({node}) => {
 
   const [show, setShow] = useState(false);
-  const [work, setWork] = useState({});
+  const [work, setWork] = useState(null);
   const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
 
   return (
     <>
@@ -23,17 +23,17 @@ const PortfolioPreview = ({node}) => {
         <Button
           variant="primary my-2"
             onClick={ () => {
-              setWork({ node });
+              setWork(node);
               console.log(node);
-              console.log(work);
               handleShow();
+              setShow(true);
+              console.log(show);
           }}
         >
           View {node.title}
         </Button>
 
-        { work && <PortfolioModal node={node} /> }
-        {/* { work ? <PortfolioModal node={node} /> : null } */}
+        { work && <PortfolioModal node={work} /> }
       </div>
 
     </>

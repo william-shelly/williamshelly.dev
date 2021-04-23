@@ -1,18 +1,20 @@
 import React, { useState } from "react"; //useEffect,
 import Modal from 'react-bootstrap/Modal';
-// import Button from 'react-bootstrap/Button';
+import Button from 'react-bootstrap/Button';
 
 const PortfolioModal = ({node}) => {
 	const [show, setShow] = useState(false);
 	const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
 	return (
 		<Modal
-				node={node}
-        show={show}
+        show={handleShow}
         onHide={handleClose}
-        backdrop="static"
         keyboard={true}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
       >
         <Modal.Header closeButton>
           <Modal.Title><h2>{node.title}</h2></Modal.Title>
@@ -31,6 +33,18 @@ const PortfolioModal = ({node}) => {
 
         </Modal.Body>
         <Modal.Footer>
+          <Button
+            variant="primary"
+              onClick={ () => {
+                console.log(show);
+                handleShow();
+                console.log(show);
+                setShow(true);
+                console.log(show);
+            }}
+          >
+          Close
+          </Button>
         </Modal.Footer>
       </Modal>
 	)
