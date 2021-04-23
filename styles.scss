@@ -279,6 +279,10 @@ footer .main-nav li a {
 
 .portfolio-container {
   height: 480px;
+  .project-background-img {
+    filter: grayscale(100%);
+    transform: filter .625s ease-in-out .625s;
+  }
 }
 .project-container {
   z-index: 3;
@@ -299,10 +303,6 @@ footer .main-nav li a {
 
 .project-logo-container {
   transition: transform .375s ease-in-out .325s;
-}
-
-.project-background-img {
-  filter: grayscale(100%);
 }
 
 .project-info-container {
@@ -328,9 +328,7 @@ footer .main-nav li a {
   }
   .project-background-img {
     filter: grayscale(0%);
-    transform: filter .375s ease-in-out .325s;
   }
-
   .project-info-container {
     background-color: rgba(255,255,255,0);
     h2 , p {
@@ -343,9 +341,8 @@ footer .main-nav li a {
 }
 
 .portfolio-container:hover::before {
-  background-color: rgba(0,0,0,.125);
+  background-color: rgba(0,0,0,.3);
 }
-
 
 footer {
   .logo {
