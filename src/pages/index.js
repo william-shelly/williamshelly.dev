@@ -19,7 +19,7 @@ const IndexPage = () => {
 
   return (
     <Homepage>
-      <SEO description="test" />
+      <SEO description="William Shelly - Front End Developer" />
       <section className="hero">
         <div className="hero-img-container">
           <img className="hero-img" src={hero} alt={heroAlt} />
