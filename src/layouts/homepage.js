@@ -8,15 +8,17 @@ import Footer from "../components/footer.js"
 
 
 export default function Homepage({children}) {
-    return (
-        <>
-            <Header></Header>
-
-            <div className="container-fluid px-0">
-                {children}
-            </div>
-
-            <Footer></Footer>
-        </>
-    )
+	return (
+		<>
+			<div className="wrapper">
+				<div className="wrapper-inside">
+					<Header></Header>
+					<div className="container-fluid px-0">
+						{children}
+					</div>
+				</div>
+			</div>
+			<Footer></Footer>
+		</>
+	)
 }

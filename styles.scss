@@ -16,6 +16,19 @@ $black-60-opacity: rgb(0 0 0 / 60%);
 $shadow-10px: 0 0 0.625rem;
 $shadow-16px: 0 0 1rem;
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100vh;
+}
+
+.wrapper-inside {
+  padding-bottom: 8.75rem;
+}
+
 body {
   background-color: #fff;
   color: $darkcolor;
@@ -137,6 +150,8 @@ header {
 }
 
 footer {
+  height: 8.75rem;
+  margin-top: -8.75rem;
   .main-nav {
     display: none;
     li {
