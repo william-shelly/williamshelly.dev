@@ -5,7 +5,7 @@ import Default from "../layouts/default.js"
 
 export default function Javascript() {
     const title = "JavaScript"
-    const pageName = title.replace(' ','-').toLowerCase();
+    const pageName = title.replaceAll(' ','-').toLowerCase();
     return (
         <Default>
             <IntroArea title={title} pageName={pageName} />

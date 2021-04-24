@@ -138,9 +138,15 @@ header {
     padding: 0;
     a {
       margin: 0;
-      padding: .625rem;
+      padding: .625rem .825rem;
       font-weight: bold;
       color: #fff;
+      text-decoration: none;
+      transition: all .375s ease-in-out;
+    }
+    :hover {
+      background-color: $primarycolor;
+      border-radius: .3125rem;
     }
   }
 }
@@ -262,7 +268,9 @@ footer {
   bottom: 0;
   right: 0;
   display: inline-block;
+  border-top-left-radius: .325rem;
 }
+
 .intro-area-container {
   padding-top: 3.5rem;
   .intro-area {
@@ -272,7 +280,7 @@ footer {
     background-position: center center;
     background-size: cover;
     background-color: #000;
-
+    background-repeat: no-repeat;
     .text-container {
       position: absolute;
       width: 100%;
@@ -281,9 +289,22 @@ footer {
       left: 0;
       bottom: 0;
       right: 0;
-      z-index: 3;
+      z-index: 4;
     }
   }
+}
+
+.intro-area-container .intro-area::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.65);
+  transition: background-color .5s ease-in-out 10s;
+  z-index: 2;
 }
 
 .text-shadow {
@@ -348,7 +369,7 @@ footer {
 
 .portfolio-container:hover {
   .project-logo-container {
-    transform:scale(1.25);
+    transform:scale(1.5);
   }
   .project-background-img {
     filter: grayscale(0%);
@@ -406,6 +427,11 @@ footer {
         display: inline-block;
         a {
           color: $primarycolor;
+          transition: all .375s ease-in-out;
+        }
+        :hover {
+          color: #fff;
+          background-color: $primarycolor;
         }
       }
     }

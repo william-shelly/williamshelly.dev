@@ -9,7 +9,7 @@ export default function Contact() {
     const headline = "Let's Talk!"
     const buttonLabel = "Send Message"
     const pageContent = "Ready to start your next project? Contact me and I will get back to you as soon as possible!"
-    const pageName = title.replace(' ','-').toLowerCase();
+    const pageName = title.replaceAll(' ','-').toLowerCase();
     return (
         <Default>
             <SEO title={title}></SEO>

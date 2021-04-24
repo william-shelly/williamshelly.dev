@@ -6,7 +6,7 @@ import Default from "../layouts/default.js"
 
 export default function Cheatsheets() {
 	const title = "Cheat Sheets"
-	const pageName = title.replace(' ','-').toLowerCase();
+	const pageName = title.replaceAll(' ','-').toLowerCase();
 	return (
 		<Default>
 			<SEO title={title}></SEO>

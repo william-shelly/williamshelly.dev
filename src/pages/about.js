@@ -5,7 +5,7 @@ import Default from "../layouts/default.js"
 
 export default function About(props) {
 	const title = 'About Me'
-	const pageName = title.replace(' ','-').toLowerCase();
+	const pageName = title.replaceAll(' ','-').toLowerCase();
 	return (
 		<Default>
 			<SEO title={title}></SEO>

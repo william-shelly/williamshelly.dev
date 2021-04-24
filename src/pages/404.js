@@ -2,14 +2,18 @@ import * as React from "react"
 import IntroArea from "../components/intro-area.js"
 import Default from "../layouts/default.js"
 import { Link } from "gatsby"
+import BackgroundImage from '../images/markus-spiske-PsRUMc7vilg-unsplash.jpg'
 
 // markup
 const NotFoundPage = () => {
   const title = "Page not found"
-  const pageName = title.replace(' ','-').toLowerCase();
+  const pageName = title.replaceAll(' ','-').toLowerCase();
+  const photoCredit = "Markus Spiske";
+  const photoLink = "https://unsplash.com/photos/PsRUMc7vilg?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink";
+
   return (
     <Default>
-        <IntroArea title={title} pageName={pageName} />
+        <IntroArea title={title} pageName={pageName} photoLink={photoLink} photoCredit={photoCredit} BackgroundImage={BackgroundImage} />
         <div className="container my-5">
             <div className="row">
                 <div className="col">
