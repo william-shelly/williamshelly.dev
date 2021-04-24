@@ -3,7 +3,16 @@ import Homepage from '../layouts/homepage.js'
 import SEO from '../components/seo.js'
 import hero from '../images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg'
 import 'bootstrap/dist/css/bootstrap.css'
+import { ReactJs, Gatsby } from '@icons-pack/react-simple-icons';
 import '../../styles.scss'
+
+function gatsbyIcon() {
+  return <Gatsby className="text-secondary m-4" size={100} />;
+}
+
+function reactIcon() {
+  return <ReactJs className="text-secondary m-4" size={100} />;
+}
 
 // markup
 const IndexPage = () => {
@@ -23,6 +32,10 @@ const IndexPage = () => {
       <section className="hero">
         <div className="hero-img-container">
           <img className="hero-img" src={hero} alt={heroAlt} />
+          <div className="hero-icon-container d-flex justify-content-center align-items-center">
+            {gatsbyIcon()}
+            {reactIcon()}
+        </div>
         </div>
         <div className="hero-content">
           <h1 className="fs-0 text-uppercase monofont color-primary">{site}</h1>
