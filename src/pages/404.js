@@ -6,9 +6,10 @@ import { Link } from "gatsby"
 // markup
 const NotFoundPage = () => {
   const title = "Page not found"
+  const pageName = title.replace(' ','-').toLowerCase();
   return (
     <Default>
-        <IntroArea title={title}></IntroArea>
+        <IntroArea title={title} pageName={pageName} />
         <div className="container my-5">
             <div className="row">
                 <div className="col">

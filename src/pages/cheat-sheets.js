@@ -6,10 +6,11 @@ import Default from "../layouts/default.js"
 
 export default function Cheatsheets() {
 	const title = "Cheat Sheets"
+	const pageName = title.replace(' ','-').toLowerCase();
 	return (
 		<Default>
 			<SEO title={title}></SEO>
-			<IntroArea title={title}></IntroArea>
+			<IntroArea title={title} pageName={pageName} />
 			<div className="container my-5">
 				<div className="row">
 					<div className="col">

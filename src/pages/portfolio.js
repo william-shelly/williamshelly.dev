@@ -7,10 +7,11 @@ import Default from "../layouts/default.js"
 
 const Portfolio = ({data}) => {
   const title = "Portfolio"
+  const pageName = title.replace(' ','-').toLowerCase();
   return (
       <Default>
         <SEO title={title}></SEO>
-        <IntroArea title={title}></IntroArea>
+        <IntroArea title={title} pageName={pageName} />
         <div className="container my-5">
             <div className="row">
                 <div className="col">

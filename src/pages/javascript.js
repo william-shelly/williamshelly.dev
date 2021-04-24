@@ -5,9 +5,10 @@ import Default from "../layouts/default.js"
 
 export default function Javascript() {
     const title = "JavaScript"
+    const pageName = title.replace(' ','-').toLowerCase();
     return (
         <Default>
-            <IntroArea title={title}></IntroArea>
+            <IntroArea title={title} pageName={pageName} />
             <div className="container my-5">
                 <div className="row">
                     <div className="col">

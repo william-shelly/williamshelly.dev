@@ -13,7 +13,6 @@ export default function Default({children}) {
 			<div className="wrapper">
 				<div className="wrapper-inside">
 					<Header></Header>
-
 					<div className="container-fluid px-0">
 						{children}
 					</div>

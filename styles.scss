@@ -263,26 +263,26 @@ footer {
   right: 0;
   display: inline-block;
 }
+.intro-area-container {
+  padding-top: 3.5rem;
+  .intro-area {
+    position: relative;
+    height: 30vh;
+    min-height: 200px;
+    background-position: center center;
+    background-size: cover;
+    background-color: #000;
 
-.intro-area {
-  position: relative;
-  height: 30vh;
-  min-height: 200px;
-  // background-image: url(https://i.pinimg.com/originals/c5/92/41/c59241fa98161a106b9be08dccbd3ac9.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-color: #000;
-
-  .text-container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 3;
-    // visibility: hidden;
+    .text-container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 3;
+    }
   }
 }
 
@@ -325,7 +325,8 @@ footer {
 }
 
 .project-logo-container {
-  transition: transform  .5s ease-in-out;
+  transform:scale(1);
+  transition: transform  .375s ease-in-out;
 }
 
 .project-info-container {
@@ -338,10 +339,10 @@ footer {
   background-color: rgba(255,255,255,.8);
   transition: background-color .5s ease-in-out;
   h2, p {
-    transition: color .5s ease-in-out;
+    transition: color .375s ease-in-out;
   }
   button {
-    transition: transform .5s ease-in-out;
+    transition: transform .375s ease-in-out;
   }
 }
 
