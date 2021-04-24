@@ -2,14 +2,16 @@ import React from "react"
 import SEO from '../components/seo.js'
 import IntroArea from "../components/intro-area.js"
 import Default from "../layouts/default.js"
-
+import BackgroundImage from '../images/marius-niveri-rfg4l6_lu3c-unsplash.jpg'
 export default function About(props) {
-	const title = 'About Me'
+	const title = 'About Me';
 	const pageName = title.replaceAll(' ','-').toLowerCase();
+	const photoCredit = 'Marius Niveri';
+	const photoLink = 'https://unsplash.com/photos/rfg4l6_lu3c?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink';
 	return (
 		<Default>
 			<SEO title={title}></SEO>
-			<IntroArea title={title} pageName={pageName} />
+			<IntroArea title={title} pageName={pageName} photoLink={photoLink} photoCredit={photoCredit} BackgroundImage={BackgroundImage} />
 			<div className="container my-5">
 				<div className="row">
 					<div className="col">

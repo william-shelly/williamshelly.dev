@@ -2,13 +2,16 @@ import React from "react"
 // import { Link } from "gatsby"
 import IntroArea from "../components/intro-area.js"
 import Default from "../layouts/default.js"
+import BackgroundImage from '../images/thomas-tastet-hSODeSbvzE0-unsplash.jpg'
 
 export default function Javascript() {
     const title = "JavaScript"
     const pageName = title.replaceAll(' ','-').toLowerCase();
+    const photoCredit = 'Thomas Tastet';
+	const photoLink = 'https://unsplash.com/photos/hSODeSbvzE0?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink';
     return (
         <Default>
-            <IntroArea title={title} pageName={pageName} />
+            <IntroArea title={title} pageName={pageName} photoLink={photoLink} photoCredit={photoCredit} BackgroundImage={BackgroundImage} />
             <div className="container my-5">
                 <div className="row">
                     <div className="col">
