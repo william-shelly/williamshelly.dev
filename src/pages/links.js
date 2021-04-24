@@ -7,7 +7,7 @@ import BackgroundImage from '../images/dlanor-s-2xEQDxB0ss4-unsplash.jpg'
 
 export default function Links() {
 	const title = "Links"
-	const pageName = title.replaceAll(' ','-').toLowerCase();
+	const pageName = title.replace(/ /g,'-').toLowerCase();
 	const photoCredit = 'Dlanor S';
 	const photoLink = 'https://unsplash.com/photos/2xEQDxB0ss4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink';
 	return (

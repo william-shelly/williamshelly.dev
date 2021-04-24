@@ -7,7 +7,7 @@ import BackgroundImage from '../images/markus-spiske-PsRUMc7vilg-unsplash.jpg'
 // markup
 const NotFoundPage = () => {
   const title = "Page not found"
-  const pageName = title.replaceAll(' ','-').toLowerCase();
+  const pageName = title.replace(/ /g,'-').toLowerCase();
   const photoCredit = "Markus Spiske";
   const photoLink = "https://unsplash.com/photos/PsRUMc7vilg?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink";
 

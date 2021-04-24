@@ -9,7 +9,7 @@ export default function Contact() {
     const headline = "Let's Talk!"
     const buttonLabel = "Send Message"
     const pageContent = "Ready to start your next project? Contact me and I will get back to you as soon as possible!"
-    const pageName = title.replaceAll(' ','-').toLowerCase();
+    const pageName = title.replace(/ /g,'-').toLowerCase();
     const photoCredit = 'Alexander Sinn';
 	const photoLink = 'https://unsplash.com/photos/KgLtFCgfC28?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink';
     return (

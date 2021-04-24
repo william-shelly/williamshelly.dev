@@ -7,7 +7,7 @@ import BackgroundImage from '../images/markus-spiske-hvSr_CVecVI-unsplash.jpg'
 
 export default function Cheatsheets() {
 	const title = "Cheat Sheets"
-	const pageName = title.replaceAll(' ','-').toLowerCase();
+	const pageName = title.replace(/ /g,'-').toLowerCase();
 	const photoCredit = 'Markus Spiske';
 	const photoLink = 'https://unsplash.com/photos/hvSr_CVecVI?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink';
 

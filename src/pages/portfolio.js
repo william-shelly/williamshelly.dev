@@ -8,7 +8,7 @@ import BackgroundImage from '../images/pankaj-patel-ruiU36AR5zo-unsplash.jpg'
 
 const Portfolio = ({data}) => {
   const title = "Portfolio"
-  const pageName = title.replaceAll(' ','-').toLowerCase();
+  const pageName = title.replace(/ /g,'-').toLowerCase();
   const photoCredit = 'Pankaj Patel';
 	const photoLink = 'https://unsplash.com/photos/ruiU36AR5zo?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink';
   return (

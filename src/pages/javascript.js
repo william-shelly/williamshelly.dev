@@ -6,7 +6,7 @@ import BackgroundImage from '../images/thomas-tastet-hSODeSbvzE0-unsplash.jpg'
 
 export default function Javascript() {
     const title = "JavaScript"
-    const pageName = title.replaceAll(' ','-').toLowerCase();
+    const pageName = title.replace(/ /g,'-').toLowerCase();
     const photoCredit = 'Thomas Tastet';
 	const photoLink = 'https://unsplash.com/photos/hSODeSbvzE0?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink';
     return (

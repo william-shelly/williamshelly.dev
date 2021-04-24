@@ -5,7 +5,7 @@ import Default from "../layouts/default.js"
 import BackgroundImage from '../images/marius-niveri-rfg4l6_lu3c-unsplash.jpg'
 export default function About(props) {
 	const title = 'About Me';
-	const pageName = title.replaceAll(' ','-').toLowerCase();
+	const pageName = title.replace(/ /g,'-').toLowerCase();
 	const photoCredit = 'Marius Niveri';
 	const photoLink = 'https://unsplash.com/photos/rfg4l6_lu3c?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink';
 	return (
