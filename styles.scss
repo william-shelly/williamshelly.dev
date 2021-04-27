@@ -51,7 +51,9 @@ body {
 }
 
 button.color-primary:hover ,
-a.color-primary:hover {
+button.color-primary:focus ,
+a.color-primary:hover ,
+a.color-primary:focus {
   color: #555;
 }
 

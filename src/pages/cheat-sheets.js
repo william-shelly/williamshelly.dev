@@ -44,12 +44,12 @@ const Cheatsheets = () => {
 				<div className="row">
 				<div className="col-12 col-lg-6">
 						<div className="card mb-4">
-							<div class="card-body">
+							<div className="card-body">
 								<h4 style={{ fontSize: "92px", margin: "1.5rem 0", color: "#cf2192" }}>A11Y</h4>
-								<h5 class="card-title"><strong>A11Y</strong></h5>
+								<h5 className="card-title"><strong>A11Y</strong></h5>
 							</div>
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item text-center">
+							<ul className="list-group list-group-flush">
+								<li className="list-group-item text-center">
 									<a className="color-primary" href="https://www.digitala11y.com/accessibility-cheat-sheets/" rel="noopener noreferrer" target="_blank">A11y Cheat Sheets</a> 
 								</li>
 							</ul>
@@ -57,15 +57,15 @@ const Cheatsheets = () => {
 					</div>
 					<div className="col-12 col-lg-6">
 						<div className="card mb-4">
-							<div class="card-body">
+							<div className="card-body">
 								{ cssThreeIcon() }
-								<h5 class="card-title"><strong>CSS</strong></h5>
+								<h5 className="card-title"><strong>CSS</strong></h5>
 							</div>
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item text-center">
+							<ul className="list-group list-group-flush">
+								<li className="list-group-item text-center">
 									<a className="color-primary" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" rel="noopener noreferrer" target="_blank">CSS Tricks: Flex</a> 
 								</li>
-								<li class="list-group-item text-center">
+								<li className="list-group-item text-center">
 									<a className="color-primary" href="https://css-tricks.com/snippets/css/complete-guide-grid/" rel="noopener noreferrer" target="_blank">CSS Tricks: Grid</a> 
 								</li>
 							</ul>
@@ -73,12 +73,12 @@ const Cheatsheets = () => {
 					</div>
 					<div className="col-12 col-lg-6">
 						<div className="card mb-4">
-							<div class="card-body">
+							<div className="card-body">
 								{ gatsbyIcon() }
-								<h5 class="card-title"><strong>Gatsby</strong></h5>
+								<h5 className="card-title"><strong>Gatsby</strong></h5>
 							</div>
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item text-center">
+							<ul className="list-group list-group-flush">
+								<li className="list-group-item text-center">
 									<a className="color-primary" href="https://www.gatsbyjs.com/docs/cheat-sheet/" rel="noopener noreferrer" target="_blank">Gatsby Cheat Sheet</a>
 								</li>
 							</ul>
@@ -86,24 +86,24 @@ const Cheatsheets = () => {
 					</div>
 					<div className="col-12 col-lg-6">
 						<div className="card mb-4">
-							<div class="card-body">
+							<div className="card-body">
 								{ gitIcon() }
-								<h5 class="card-title"><strong>Git</strong></h5>
+								<h5 className="card-title"><strong>Git</strong></h5>
 							</div>
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item text-center">
+							<ul className="list-group list-group-flush">
+								<li className="list-group-item text-center">
 									<a className="color-primary" href="https://williamshelly.com/git/git-cheat-sheet.txt" rel="noopener noreferrer" target="_blank">Git Cheat Sheet</a> </li>
 							</ul>
 						</div>
 					</div>
 					<div className="col-12 col-lg-6">
 						<div className="card mb-4">
-							<div class="card-body">
+							<div className="card-body">
 								{ javascriptIcon() }
-								<h5 class="card-title"><strong>Vanilla JavaScript</strong></h5>
+								<h5 className="card-title"><strong>Vanilla JavaScript</strong></h5>
 							</div>
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item text-center">
+							<ul className="list-group list-group-flush">
+								<li className="list-group-item text-center">
 									<a className="color-primary" href="https://williamshelly.com/javascript/js-cheat-sheet.txt" rel="noopener noreferrer" target="_blank">JS Cheat Sheet</a>
 								</li>
 							</ul>
@@ -111,12 +111,12 @@ const Cheatsheets = () => {
 					</div>
 					<div className="col-12 col-lg-6">
 						<div className="card mb-4">
-							<div class="card-body">
+							<div className="card-body">
 								{ mySQLIcon() }
-								<h5 class="card-title"><strong>MySQL</strong></h5>
+								<h5 className="card-title"><strong>MySQL</strong></h5>
 							</div>
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item text-center">
+							<ul className="list-group list-group-flush">
+								<li className="list-group-item text-center">
 									<a className="color-primary" href="https://williamshelly.com/sql/sql-cheat-sheet.txt" rel="noopener noreferrer" target="_blank">SQL Cheat Sheet</a>
 								</li>
 							</ul>
