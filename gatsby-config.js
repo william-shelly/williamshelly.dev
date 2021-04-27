@@ -5,11 +5,11 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: "williamshelly.dev",
-    siteUrl: "https://williamshelly.dev/",
+    siteUrl: "https://williamshelly.dev",
     titleTemplate: "%s · Freelance Designer and Front End Developer · WilliamShelly.dev",
     description: "Designing websites for a living",
-    url: "https://williamshelly.dev/",
-    image: "src/images/og.png",
+    url: "https://williamshelly.dev",
+    image: "/images/og.png",
     twitterUsername: "@williamshelly",
   },
   plugins: [
