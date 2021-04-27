@@ -18,7 +18,7 @@ export default function Contact() {
             <IntroArea title={headline} pageName={pageName} photoLink={photoLink} photoCredit={photoCredit} BackgroundImage={BackgroundImage} />
             <div className="container my-5">
                 <div className="row justify-content-center">
-                    <div className="col-6">
+                    <div className="col-12 col-lg-6">
                         <p>{pageContent}</p>
 
                         <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" action="/thankyou">
@@ -52,8 +52,8 @@ export default function Contact() {
                             </div>
 
                             <div className="button-container text-right">
-                                <button className="btn btn-danger d-sm-inline-block m-0-auto align-center mr-2" type="submit">{buttonLabel}</button>
-                                <input className="btn btn-danger d-sm-inline-block m-0-auto align-center" type="reset" />
+                                <button className="btn btn-primary d-sm-inline-block m-0-auto align-center mr-2" type="submit">{buttonLabel}</button>
+                                <input className="btn btn-primary d-sm-inline-block m-0-auto align-center" type="reset" />
                             </div>
                         </form>
                     </div>

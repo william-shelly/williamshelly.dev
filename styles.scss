@@ -108,9 +108,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.btn-primarycolor {
+.btn-primarycolor, 
+.btn-primary  {
   background-color: $primarycolor;
+  border-color: $primarycolor;
 }
+
+.btn-primarycolor:hover, 
+.btn-primary:hover  {
+  background-color: white;
+  border-color: $primarycolor;
+  color: $primarycolor;
+}
+
 
 .top-0 {
   top: 0;
@@ -396,7 +406,7 @@ footer {
       width: 100vw;
       height: 80vh;
       z-index: 3;
-      opacity: .125;
+      opacity: .28;
       justify-content: space-around;
       align-items: stretch;
       svg {
@@ -445,8 +455,8 @@ footer {
   padding-top: 3.5rem;
   .intro-area {
     position: relative;
-    height: 30vh;
-    min-height: 200px;
+    height: 40vh;
+    min-height: 300px;
     background-position: center center;
     background-size: cover;
     background-color: #000;
