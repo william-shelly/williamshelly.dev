@@ -8,7 +8,7 @@ export default function Contact() {
     const title = "Contact"
     const headline = "Let's Talk!"
     const buttonLabel = "Send Message"
-    const pageContent = "Ready to start your next project? Contact me and I will get back to you as soon as possible!"
+    const pageContent = "Ready to start your next project? Contact me and I will get back with you to discuss."
     const pageName = title.replace(/ /g,'-').toLowerCase();
     const photoCredit = 'Alexander Sinn';
 	const photoLink = 'https://unsplash.com/photos/KgLtFCgfC28?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink';
@@ -19,7 +19,7 @@ export default function Contact() {
             <div className="container my-5">
                 <div className="row justify-content-center">
                     <div className="col-12 col-lg-6">
-                        <p>{pageContent}</p>
+                        <p className="text-base text-center">{pageContent}</p>
 
                         <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" action="/thankyou">
                             <input type="hidden" name="form-name" value="contact" />

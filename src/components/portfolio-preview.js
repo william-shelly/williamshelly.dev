@@ -41,7 +41,8 @@ export default function PortfolioPreview({node}) {
             <div>
               <h2 className="fs-8">{node.title}</h2>
               <p
-              dangerouslySetInnerHTML={{ __html: node.featuredImage.description}}>
+                className="text-base"
+                dangerouslySetInnerHTML={{ __html: node.featuredImage.description}}>
               </p>
             </div>
             : undefined }
@@ -66,7 +67,7 @@ export default function PortfolioPreview({node}) {
 
           {node.featuredImage ? <img src={node.featuredImage.file.url} className="w-100 my-2" alt={node.featuredImage.description} loading="lazy" /> : undefined }
 
-          {node.featuredImage ? <p><span dangerouslySetInnerHTML={{ __html: node.featuredImage.description}}></span></p> : undefined }
+          {node.featuredImage ? <p className="text-base"><span dangerouslySetInnerHTML={{ __html: node.featuredImage.description}}></span></p> : undefined }
 
           {node.image02 ? <img src={node.image02.file.url} className="w-100 my-2" alt={node.image02.description} loading="lazy" /> : undefined }
 

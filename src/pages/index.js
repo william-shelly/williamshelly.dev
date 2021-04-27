@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link } from "gatsby"
 import Homepage from '../layouts/homepage.js'
 import SEO from '../components/seo.js'
 import hero from '../images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg'
@@ -38,7 +39,13 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-      {/* {myFunction()} */}
+      <div class="jumbotron text-center bg-white">
+        <h2 className="fs-4 my-4 text-center color-primary">
+          Do you need help with Design Work<br />
+          or a Developer to Code your Site?</h2>
+        <p className="text-base my-4 text-center">Let's discuss your project and how I can help you meet your goals.</p>
+        <Link class="btn btn-primary d-sm-inline-block m-0-auto align-center mr-2" to="/contact">Let's Talk!</Link>
+      </div>
     </Homepage>
   )
 }

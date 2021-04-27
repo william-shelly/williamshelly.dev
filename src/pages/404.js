@@ -17,13 +17,13 @@ const NotFoundPage = () => {
         <div className="container my-5">
             <div className="row">
                 <div className="col text-center">
-                    <p>Sorry{" "}
+                    <p className="text-base">Sorry{" "}
                       <span role="img" aria-label="Pensive emoji">
                         😔
                       </span>{" "}
                       &nbsp; we couldn’t find what you were looking for.</p>
 
-                    <p><Link className="btn btn-primary" to="/">Back to Homepage</Link>.</p>
+                    <p className="text-base"><Link className="btn btn-primary" to="/">Back to Homepage</Link>.</p>
                 </div>
             </div>
         </div>

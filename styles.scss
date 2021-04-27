@@ -50,7 +50,8 @@ body {
   color: $primarycolor;
 }
 
-.color-primary:hover {
+button.color-primary:hover ,
+a.color-primary:hover {
   color: #555;
 }
 
@@ -118,6 +119,58 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
 
 .btn-primarycolor,
 .btn-primary  {
@@ -412,7 +465,7 @@ footer {
       visibility: hidden;
       transform: scale(1.1) translate(-50%,-50%);
       animation-name: setBackground;
-      animation-duration: 2s;
+      animation-duration: 3s;
       animation-fill-mode: forwards;
       animation-delay: 2.5s;
     }
@@ -519,6 +572,9 @@ footer {
       bottom: 0;
       right: 0;
       z-index: 4;
+    }
+    .fs-0.color-primary {
+      text-shadow: $shadow-16px $black-30-opacity;
     }
   }
 }
@@ -648,6 +704,45 @@ footer {
     color: $primarycolor;
   }
 }
+.profile-pic {
+  visibility: hidden;
+  border: 0.25rem solid $primarycolor;
+  box-shadow: $black-30-opacity $shadow-10px;
+  animation-name: setProfilePic;
+  animation-duration: .375s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  width: 12.5rem;
+  height: auto;
+}
+
+@keyframes setProfilePic {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+  }
+  75% {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+}
+
 
 @media (min-width: 992px) {
   header {

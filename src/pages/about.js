@@ -4,6 +4,7 @@ import IntroArea from "../components/intro-area.js"
 import Default from "../layouts/default.js"
 import IconGallery from '../components/icon-gallery'
 import BackgroundImage from '../images/marius-niveri-rfg4l6_lu3c-unsplash.jpg'
+import profileImage from '../images/profile.webp'
 export default function About(props) {
 	const title = 'About Me';
 	const pageName = title.replace(/ /g,'-').toLowerCase();
@@ -16,13 +17,14 @@ export default function About(props) {
 			<div className="container my-5">
 				<div className="row">
 					<div className="col">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<img class="profile-pic rounded-circle d-block mx-auto mb-4 delay-20" src={profileImage} alt="William Shelly - freelance designer / front-end developer" />
+						<p className="text-base">I am a freelance designer and front-end developer. I have worked as a designer for 25 years. I have recently decided to explore the interactive side of the web with JavaScript and ReactJS. I have gained experience in many different worlds: agency, corporate, and startup.</p>
 					</div>
 				</div>
 				<div className="row">
 					<div className="col">
 						<div>
-							<p>Here are a few of the technologies that I have worked with over the years:</p>
+							<p className="text-base">Here are some of the tools that I work with daily:</p>
 						</div>
 						<div class="icon-gallery">
 							<IconGallery />

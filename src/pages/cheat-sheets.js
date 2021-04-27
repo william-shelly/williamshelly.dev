@@ -38,7 +38,7 @@ const Cheatsheets = () => {
 			<div className="container my-5">
 				<div className="row">
 					<div className="col-12">
-						<p>My little repository for code snippets or little reminders for how I got stuff to work.</p>
+						<p className="text-base text-center">Quick reference sheets that I consult throughout the day.</p>
 					</div>
 				</div>
 				<div className="row">
@@ -63,7 +63,9 @@ const Cheatsheets = () => {
 							</div>
 							<ul class="list-group list-group-flush">
 								<li class="list-group-item text-center">
-									<a className="color-primary" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" rel="noopener noreferrer" target="_blank">CSS Tricks: Flexbox</a> 
+									<a className="color-primary" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" rel="noopener noreferrer" target="_blank">CSS Tricks: Flex</a> 
+								</li>
+								<li class="list-group-item text-center">
 									<a className="color-primary" href="https://css-tricks.com/snippets/css/complete-guide-grid/" rel="noopener noreferrer" target="_blank">CSS Tricks: Grid</a> 
 								</li>
 							</ul>

@@ -46,7 +46,7 @@ const Links = () => {
 			<div className="container my-5">
 				<div className="row">
 					<div className="col-12">
-					<p>Here are some references that I consult repeatedly.</p>
+					<p className="text-base text-center">References that I consult repeatedly throughout the day.</p>
 					</div>
 				</div>
 				<div className="row">
@@ -55,7 +55,6 @@ const Links = () => {
 							<div class="card-body">
 								<h4 style={{ fontSize: "92px", margin: "1.5rem 0", color: "#cf2192" }}>A11Y</h4>
 								<h5 class="card-title"><strong>A11Y</strong></h5>
-								{ /* <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> */ }
 							</div>
 							<ul class="list-group list-group-flush">
 								<li class="list-group-item text-center">
@@ -75,7 +74,6 @@ const Links = () => {
 							<div class="card-body">
 								{ cssThreeIcon() }
 								<h5 class="card-title"><strong>CSS</strong></h5>
-								{ /* <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> */ }
 							</div>
 							<ul class="list-group list-group-flush">
 								<li class="list-group-item text-center">
@@ -95,7 +93,6 @@ const Links = () => {
 							<div class="card-body">
 								{ gatsbyIcon() }
 								<h5 class="card-title"><strong>Gatsby</strong></h5>
-								{ /* <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> */ }
 							</div>
 							<ul class="list-group list-group-flush">
 								<li class="list-group-item text-center">
@@ -115,7 +112,6 @@ const Links = () => {
 							<div class="card-body">
 								{ gitIcon() }
 								<h5 class="card-title"><strong>Git</strong></h5>
-								{ /* <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> */ }
 							</div>
 							<ul class="list-group list-group-flush">
 								<li class="list-group-item text-center"><a className="color-primary" href="https://www.atlassian.com/git/tutorials" rel="noopener noreferrer" target="_blank">Git Tutorials</a></li>
@@ -129,7 +125,6 @@ const Links = () => {
 							<div class="card-body">
 								{ javascriptIcon() }
 								<h5 class="card-title"><strong>Vanilla JavaScript</strong></h5>
-								{ /* <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> */ }
 							</div>
 							<ul class="list-group list-group-flush">
 								<li class="list-group-item text-center">
@@ -150,7 +145,6 @@ const Links = () => {
 							<div class="card-body">
 								{ reactIcon() }
 								<h5 class="card-title"><strong>React</strong></h5>
-								{ /* <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> */ }
 							</div>
 							<ul class="list-group list-group-flush">
 								<li class="list-group-item text-center">
@@ -169,7 +163,6 @@ const Links = () => {
 							<div class="card-body">
 								{ npmIcon() }
 								<h5 class="card-title"><strong>NPM</strong></h5>
-								{ /* <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> */ }
 							</div>
 							<ul class="list-group list-group-flush">
 								<li class="list-group-item text-center">
@@ -189,7 +182,6 @@ const Links = () => {
 							<div class="card-body">
 								{ nodeJsIcon() }
 								<h5 class="card-title"><strong>NodeJS</strong></h5>
-								{ /* <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> */ }
 							</div>
 							<ul class="list-group list-group-flush">
 								<li class="list-group-item text-center">

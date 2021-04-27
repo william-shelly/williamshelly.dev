@@ -20,7 +20,7 @@ export default function PortfolioModal({node}) {
 			<Modal.Body>
 				{node.featuredImage ? <img src={node.featuredImage.file.url} className="w-100 my-2" alt={node.featuredImage.description} loading="lazy" /> : undefined }
 
-				{node.featuredImage ? <p><span dangerouslySetInnerHTML={{ __html: node.featuredImage.description}}></span></p> : undefined }
+				{node.featuredImage ? <p className="text-base"><span dangerouslySetInnerHTML={{ __html: node.featuredImage.description}}></span></p> : undefined }
 
 			</Modal.Body>
 			<Modal.Footer>
