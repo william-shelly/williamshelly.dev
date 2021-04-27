@@ -406,7 +406,7 @@ footer {
       width: 100vw;
       height: 80vh;
       z-index: 3;
-      opacity: .28;
+      opacity: .2;
       justify-content: space-around;
       align-items: stretch;
       svg {
@@ -439,6 +439,12 @@ footer {
     text-align: center;
       h1 , h2 , p{
         text-shadow: $shadow-10px $black-60-opacity;
+      }
+      .fs-0 {
+        font-size: 1.8rem;
+      }
+      .fs-6 {
+        font-size: 1.2rem;
       }
   }
 }
