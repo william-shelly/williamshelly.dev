@@ -50,6 +50,10 @@ body {
   color: $primarycolor;
 }
 
+.color-primary:hover {
+  color: #555;
+}
+
 .color-secondary {
   color: $secondarycolor;
 }
@@ -621,6 +625,17 @@ footer {
   background-color: rgba(0,0,0,.3);
 }
 
+.card-body {
+  text-align: center;
+  svg {
+    width: 100px;
+    height: auto;
+  }
+  svg:hover {
+    color: $primarycolor;
+  }
+}
+
 footer {
   .logo {
     width: 100%;
@@ -685,13 +700,15 @@ footer {
   .hero {
     .hero-img-container {
       display: flex;
-      // justify-content: center;
+      justify-content: center;
       align-items: center;
       .hero-icon-container {
         padding: 0;
         height: 66vh;
+        width: 100vw;
+        max-width: 1200px;
         svg {
-          width: 8%;
+          width: 7%;
           height: auto;
         }
       }

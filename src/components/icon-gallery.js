@@ -1,4 +1,4 @@
-import React, { useState } from "react"; //useEffect,
+import React from "react"
 import { ReactJs, Gatsby, Javascript, Jquery, Adobephotoshop, Adobeillustrator, Adobexd, Visualstudiocode, Bootstrap, Tailwindcss, Git, Github, Xcode, Json, Wordpress, Googlechrome, Safari, Applemusic, Applepodcasts, Googlecalendar, Netlify, Contentful, Php, CssThree, Npm, NodeDotJs, Sass } from '@icons-pack/react-simple-icons';
 
 const IconGallery = () => {
