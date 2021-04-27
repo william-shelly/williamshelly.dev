@@ -116,7 +116,7 @@ const Links = () => {
 							<ul className="list-group list-group-flush">
 								<li className="list-group-item text-center"><a className="color-primary" href="https://www.atlassian.com/git/tutorials" rel="noopener noreferrer" target="_blank">Git Tutorials</a></li>
 								<li className="list-group-item text-center"><a className="color-primary" href="https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/" rel="noopener noreferrer" target="_blank">FreeCodeCamp: Git</a></li>
-								<li className="list-group-item text-center"><a className="color-primary" href="https://www.codecademy.com/learn/learn-git" rel="noopener noreferrer" target="_blank">Code Academy: Learn Git</a></li>
+								<li className="list-group-item text-center"><a className="color-primary" href="https://ohshitgit.com/" rel="noopener noreferrer" target="_blank">Oh Shit, Git!?!</a></li>
 							</ul>
 						</div>
 					</div>
