@@ -16,8 +16,8 @@ export default function PortfolioPreview({node}) {
         <div className="portfolio-container text-center d-flex flex-column justify-content-between align-items-center flex-fill flex-grow-1 position-relative overflow-hidden my-4">
           {node.logo.file.url ?
           <div className="d-flex center-img project-container">
-            <div className="project-logo-container p-1 bg-light rounded-lg shadow-lg">
-              <Button className="btn-light" variant="btn-outline-light" onClick={handleShow}>
+            <div className="project-logo-container p-1 background-white rounded-lg shadow-lg">
+              <Button className="background-white" variant="btn-outline-light" onClick={handleShow}>
                 <img src={node.logo.file.url}
                   className="d-flex project-logo"
                   alt={node.title}
