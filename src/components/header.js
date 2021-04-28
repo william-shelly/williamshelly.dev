@@ -8,7 +8,7 @@ export default function Header() {
     return (
 		<header>
 			<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-				<Navbar.Brand href="/"><img src={atW} atl="williamshelly.dev W logo" style={{width: "1.75rem", height: "auto"}} /></Navbar.Brand>
+				<Navbar.Brand href="/"><img src={atW} alt="williamshelly.dev W logo" style={{width: "1.75rem", height: "auto"}} /></Navbar.Brand>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
 					<Nav className="mr-auto">
