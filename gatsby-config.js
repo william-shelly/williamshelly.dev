@@ -9,7 +9,7 @@ module.exports = {
     titleTemplate: "%s · Freelance Designer and Front End Developer · WilliamShelly.dev",
     description: "Designing websites for a living",
     url: "https://williamshelly.dev",
-    image: "/static/og.png",
+    image: "/og.png",
     twitterUsername: "@williamshelly",
   },
   plugins: [
