@@ -77,6 +77,9 @@ query PortfolioQuery {
           description
           title
         }
+        projectDescription {
+          projectDescription
+        }
       }
     }
   }

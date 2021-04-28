@@ -1,5 +1,4 @@
 import React, { useState } from "react";  // { useEffect, }
-// import { Link } from 'gatsby'
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 // import PortfolioModal from '../components/portfolio-modal.js'
@@ -37,6 +36,7 @@ export default function PortfolioPreview({node}) {
           : undefined }
 
           <div className="project-info-container position-absolute fixed-bottom py-1 px-3">
+
             {node.featuredImage ?
             <div>
               <h2 className="fs-8">{node.title}</h2>
@@ -64,6 +64,8 @@ export default function PortfolioPreview({node}) {
           <Modal.Title><h2>{node.title}</h2></Modal.Title>
         </Modal.Header>
         <Modal.Body>
+
+          {node.projectDescription ? <div className="text-base mt-2 mb-4" dangerouslySetInnerHTML={{ __html: node.projectDescription.projectDescription}}></div> : undefined }
 
           {node.featuredImage ? <img src={node.featuredImage.file.url} className="w-100 my-2" alt={node.featuredImage.description} loading="lazy" /> : undefined }
 
