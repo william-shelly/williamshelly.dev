@@ -747,6 +747,20 @@ footer {
   }
 }
 
+.h1-ws ,
+.h1-freelance {
+  width: 50%;
+  max-width: 768px;
+}
+
+.h1-ws {
+  margin: 0 auto;
+}
+
+.h1-freelance {
+  margin: 1.5rem auto 2rem auto;
+}
+
 
 @media (min-width: 992px) {
   header {

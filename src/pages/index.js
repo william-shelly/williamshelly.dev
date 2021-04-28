@@ -6,6 +6,8 @@ import hero from '../images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg'
 import IconGallery from '../components/icon-gallery'
 import 'bootstrap/dist/css/bootstrap.css'
 import '../../styles.scss'
+import h1WS from '../images/h1-ws.svg'
+import h1Freelance from '../images/h1-freelance.svg'
 
 // markup
 const IndexPage = () => {
@@ -30,8 +32,10 @@ const IndexPage = () => {
           </div>
         </div>
         <div className="hero-content">
-          <h1 className="fs-0 text-uppercase monofont color-primary">{site}</h1>
-          <h2 className="fs-6 text-uppercase monofont mb-4 color-primary">{subheadline}</h2>
+          <img className="h1-ws" src={h1WS} alt={site} />
+          <img className="h1-freelance" src={h1Freelance} alt={subheadline} />
+          <h1 className="sr-only">{site}</h1>
+          <h2 className="sr-only">{subheadline}</h2>
           <h3 className="fs-6 text-white">{content}</h3>
           <h4 className="fs-6 text-white">{content2}</h4>
           <div className="photo-credit background-color-primary p-3">
