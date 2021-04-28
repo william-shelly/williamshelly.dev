@@ -18,7 +18,9 @@ export default function About(props) {
 				<div className="row">
 					<div className="col">
 						<img className="profile-pic rounded-circle d-block mx-auto mb-4 delay-20" src={profileImage} alt="William Shelly - freelance designer / front-end developer" />
-						<p className="text-base">I am a freelance designer and front-end developer. I have worked as a designer for 25 years. I have recently decided to explore the interactive side of the web with JavaScript and ReactJS. I have gained experience in many different worlds: agency, corporate, and startup.</p>
+						<p className="text-base">I am a freelance designer and front-end developer. I have worked as a designer for 25 years. I have gained experience in many different worlds: agency, corporate, startup, and freelance.</p>
+
+						<p>I completed a 6-month <strong>Front-End Web Development</strong> course from the University of Arkansas Professional and Workforce Development program.</p>
 					</div>
 				</div>
 				<div className="row">
