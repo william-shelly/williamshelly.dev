@@ -557,6 +557,20 @@ footer {
   border-top-left-radius: .325rem;
 }
 
+.h1-ws ,
+.h1-freelance {
+  width: 90%;
+  max-width: 400px;
+}
+
+.h1-ws {
+  margin: 0 auto;
+}
+
+.h1-freelance {
+  margin: 1.5rem auto 2rem auto;
+}
+
 .intro-area-container {
   padding-top: 3.5rem;
   .intro-area {
@@ -608,6 +622,7 @@ footer {
 }
 
 .icon-gallery {
+  text-align: center;
   svg {
     width: 14%;
     height: auto;
@@ -747,20 +762,9 @@ footer {
   }
 }
 
-.h1-ws ,
-.h1-freelance {
-  width: 50%;
-  max-width: 768px;
+.project-tag {
+  font-size: .625rem;
 }
-
-.h1-ws {
-  margin: 0 auto;
-}
-
-.h1-freelance {
-  margin: 1.5rem auto 2rem auto;
-}
-
 
 @media (min-width: 992px) {
   header {
@@ -841,6 +845,24 @@ footer {
       height: auto;
     }
   }
+  .h1-ws ,
+  .h1-freelance {
+    width: 50%;
+    max-width: 768px;
+  }
+
+  .h1-ws {
+    margin: 0 auto;
+  }
+
+  .h1-freelance {
+    margin: 1.5rem auto 2rem auto;
+  }
+
+  .project-tag {
+    font-size: 0.75rem;
+  }
+
 }
 
 @media (min-width: 1024px) {
