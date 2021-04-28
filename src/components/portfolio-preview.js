@@ -32,7 +32,7 @@ export default function PortfolioPreview({node}) {
           {node.featuredImage ?
           <img src={node.featuredImage.file.url}
             className="project-background-img d-flex w-100"
-            alt={node.featuredImage.description} loading="lazy" />
+            alt={node.featuredImage.title} loading="lazy" />
           : undefined }
 
           <div className="project-info-container position-absolute fixed-bottom py-1 px-3">
@@ -67,15 +67,15 @@ export default function PortfolioPreview({node}) {
 
           {node.projectDescription ? <div className="text-base mt-2 mb-4" dangerouslySetInnerHTML={{ __html: node.projectDescription.projectDescription}}></div> : undefined }
 
-          {node.featuredImage ? <img src={node.featuredImage.file.url} className="w-100 my-2" alt={node.featuredImage.description} loading="lazy" /> : undefined }
+          {node.featuredImage ? <img src={node.featuredImage.file.url} className="w-100 my-2" alt={node.featuredImage.title} loading="lazy" /> : undefined }
 
-          {node.featuredImage ? <p className="text-base"><span dangerouslySetInnerHTML={{ __html: node.featuredImage.description}}></span></p> : undefined }
+          {node.featuredImage ? <p className="text-base"><span dangerouslySetInnerHTML={{ __html: node.featuredImage.title}}></span></p> : undefined }
 
-          {node.image02 ? <img src={node.image02.file.url} className="w-100 my-2" alt={node.image02.description} loading="lazy" /> : undefined }
+          {node.image02 ? <img src={node.image02.file.url} className="w-100 my-2" alt={node.image02.title} loading="lazy" /> : undefined }
 
-          {node.image03 ? <img src={node.image03.file.url} className="w-100 my-2" alt={node.image03.description} loading="lazy" /> : undefined }
+          {node.image03 ? <img src={node.image03.file.url} className="w-100 my-2" alt={node.image03.title} loading="lazy" /> : undefined }
 
-          {node.image04 ? <img src={node.image04.file.url} className="w-100 my-2" alt={node.image04.description} loading="lazy" /> : undefined }
+          {node.image04 ? <img src={node.image04.file.url} className="w-100 my-2" alt={node.image04.title} loading="lazy" /> : undefined }
 
         </Modal.Body>
         <Modal.Footer />
