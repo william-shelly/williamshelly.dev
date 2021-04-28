@@ -2,7 +2,7 @@ import * as React from "react"
 import IntroArea from "../components/intro-area.js"
 import Default from "../layouts/default.js"
 import { Link } from "gatsby"
-import BackgroundImage from '../images/markus-spiske-PsRUMc7vilg-unsplash.jpg'
+import BackgroundImage from '../images/markus-spiske-PsRUMc7vilg-unsplash.webp'
 
 // markup
 const NotFoundPage = () => {

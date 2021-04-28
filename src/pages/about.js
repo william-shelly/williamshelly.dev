@@ -3,7 +3,7 @@ import SEO from '../components/seo.js'
 import IntroArea from "../components/intro-area.js"
 import Default from "../layouts/default.js"
 import IconGallery from '../components/icon-gallery'
-import BackgroundImage from '../images/marius-niveri-rfg4l6_lu3c-unsplash.jpg'
+import BackgroundImage from '../images/marius-niveri-rfg4l6_lu3c-unsplash.webp'
 import profileImage from '../images/profile.webp'
 export default function About(props) {
 	const title = 'About Me';

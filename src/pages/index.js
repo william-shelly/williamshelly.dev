@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import Homepage from '../layouts/homepage.js'
 import SEO from '../components/seo.js'
-import hero from '../images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg'
+import hero from '../images/florian-olivo-4hbJ-eymZ1o-unsplash.webp'
 import IconGallery from '../components/icon-gallery'
 import 'bootstrap/dist/css/bootstrap.css'
 import '../../styles.scss'

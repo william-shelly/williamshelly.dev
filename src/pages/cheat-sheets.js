@@ -3,7 +3,7 @@ import SEO from '../components/seo.js'
 import { Gatsby, Javascript, Git, CssThree, Mysql, ReactJs, Php } from '@icons-pack/react-simple-icons';
 import IntroArea from "../components/intro-area.js"
 import Default from "../layouts/default.js"
-import BackgroundImage from '../images/markus-spiske-hvSr_CVecVI-unsplash.jpg'
+import BackgroundImage from '../images/markus-spiske-hvSr_CVecVI-unsplash.webp'
 
 const Cheatsheets = () => {
 	const title = "Cheat Sheets"

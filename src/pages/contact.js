@@ -2,7 +2,7 @@ import React from 'react'
 import IntroArea from "../components/intro-area.js"
 import Default from '../layouts/default.js'
 import SEO from '../components/seo.js'
-import BackgroundImage from '../images/alexander-sinn-KgLtFCgfC28-unsplash.jpg'
+import BackgroundImage from '../images/alexander-sinn-KgLtFCgfC28-unsplash.webp'
 
 export default function Contact() {
     const title = "Contact"

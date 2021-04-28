@@ -4,7 +4,7 @@ import SEO from '../components/seo.js'
 import IntroArea from "../components/intro-area.js"
 import PortfolioPreview from '../components/portfolio-preview.js'
 import Default from "../layouts/default.js"
-import BackgroundImage from '../images/pankaj-patel-ruiU36AR5zo-unsplash.jpg'
+import BackgroundImage from '../images/pankaj-patel-ruiU36AR5zo-unsplash.webp'
 
 const Portfolio = ({data}) => {
   const title = "Portfolio"

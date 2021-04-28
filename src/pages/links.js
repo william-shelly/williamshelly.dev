@@ -3,7 +3,7 @@ import SEO from '../components/seo.js'
 import { ReactJs, Gatsby, Javascript, Git, CssThree, Npm, NodeDotJs } from '@icons-pack/react-simple-icons';
 import IntroArea from "../components/intro-area.js"
 import Default from "../layouts/default.js"
-import BackgroundImage from '../images/dlanor-s-2xEQDxB0ss4-unsplash.jpg'
+import BackgroundImage from '../images/dlanor-s-2xEQDxB0ss4-unsplash.webp'
 
 const Links = () => {
 	const title = "Links"
