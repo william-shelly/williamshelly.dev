@@ -1,6 +1,6 @@
 import React from "react"
 import SEO from '../components/seo.js'
-import { Gatsby, Javascript, Git, CssThree, Mysql } from '@icons-pack/react-simple-icons';
+import { Gatsby, Javascript, Git, CssThree, Mysql, ReactJs, Php } from '@icons-pack/react-simple-icons';
 import IntroArea from "../components/intro-area.js"
 import Default from "../layouts/default.js"
 import BackgroundImage from '../images/markus-spiske-hvSr_CVecVI-unsplash.jpg'
@@ -31,6 +31,14 @@ const Cheatsheets = () => {
 		return <Mysql className="color-primary my-4" />;
 	}
 
+	function reactJSIcon() {
+		return <ReactJs className="color-primary my-4" />;
+	}
+
+	function phpIcon() {
+		return <Php className="color-primary my-4" />;
+	}
+
 	return (
 		<Default>
 			<SEO title={title}></SEO>
@@ -50,7 +58,7 @@ const Cheatsheets = () => {
 							</div>
 							<ul className="list-group list-group-flush">
 								<li className="list-group-item text-center">
-									<a className="color-primary" href="https://www.digitala11y.com/accessibility-cheat-sheets/" rel="noopener noreferrer" target="_blank">A11y Cheat Sheets</a> 
+									<a className="color-primary" href="https://www.digitala11y.com/accessibility-cheat-sheets/" rel="noopener noreferrer" target="_blank">A11y Cheat Sheets</a>
 								</li>
 							</ul>
 						</div>
@@ -92,7 +100,9 @@ const Cheatsheets = () => {
 							</div>
 							<ul className="list-group list-group-flush">
 								<li className="list-group-item text-center">
-									<a className="color-primary" href="https://williamshelly.com/git/git-cheat-sheet.txt" rel="noopener noreferrer" target="_blank">Git Cheat Sheet</a> </li>
+									<a className="color-primary" href="https://williamshelly.com/git/git-cheat-sheet.txt" rel="noopener noreferrer" target="_blank">Git Cheat Sheet</a></li>
+								<li className="list-group-item text-center">
+									<a className="color-primary" href="https://devhints.io/git-tricks" rel="noopener noreferrer" target="_blank">DevHints: Git Tricks</a></li>
 							</ul>
 						</div>
 					</div>
@@ -118,6 +128,32 @@ const Cheatsheets = () => {
 							<ul className="list-group list-group-flush">
 								<li className="list-group-item text-center">
 									<a className="color-primary" href="https://williamshelly.com/sql/sql-cheat-sheet.txt" rel="noopener noreferrer" target="_blank">SQL Cheat Sheet</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div className="col-12 col-lg-6">
+						<div className="card mb-4">
+							<div className="card-body">
+								{ reactJSIcon() }
+								<h5 className="card-title"><strong>React.js</strong></h5>
+							</div>
+							<ul className="list-group list-group-flush">
+								<li className="list-group-item text-center">
+									<a className="color-primary" href="https://devhints.io/react" rel="noopener noreferrer" target="_blank">DevHints: React.js</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div className="col-12 col-lg-6">
+						<div className="card mb-4">
+							<div className="card-body">
+								{ phpIcon() }
+								<h5 className="card-title"><strong>PHP</strong></h5>
+							</div>
+							<ul className="list-group list-group-flush">
+								<li className="list-group-item text-center">
+									<a className="color-primary" href="https://devhints.io/wip/php" rel="noopener noreferrer" target="_blank">DevHints: PHP</a>
 								</li>
 							</ul>
 						</div>
