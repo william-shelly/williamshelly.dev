@@ -25,6 +25,7 @@ module.exports = {
       resolve: "gatsby-plugin-google-analytics",
       options: {
         trackingId: process.env.GATSBY_PLUGIN_GOOGLE_ANALYTICS,
+        head: true,
       },
     },
     "gatsby-plugin-sass",
