@@ -103,6 +103,8 @@ const Cheatsheets = () => {
 									<a className="color-primary" href="https://williamshelly.com/git/git-cheat-sheet.txt" rel="noopener noreferrer" target="_blank">Git Cheat Sheet</a></li>
 								<li className="list-group-item text-center">
 									<a className="color-primary" href="https://devhints.io/git-tricks" rel="noopener noreferrer" target="_blank">DevHints: Git Tricks</a></li>
+								<li className="list-group-item text-center">
+									<a className="color-primary" href="https://www.git-tower.com/blog/git-cheat-sheet/" rel="noopener noreferrer" target="_blank">Git Tower: Cheat Sheet</a></li>
 							</ul>
 						</div>
 					</div>
@@ -115,6 +117,9 @@ const Cheatsheets = () => {
 							<ul className="list-group list-group-flush">
 								<li className="list-group-item text-center">
 									<a className="color-primary" href="https://williamshelly.com/javascript/js-cheat-sheet.txt" rel="noopener noreferrer" target="_blank">JS Cheat Sheet</a>
+								</li>
+								<li className="list-group-item text-center">
+									<a className="color-primary" href="https://plainjs.com/javascript/" rel="noopener noreferrer" target="_blank">Plain JS: Functions</a>
 								</li>
 							</ul>
 						</div>
