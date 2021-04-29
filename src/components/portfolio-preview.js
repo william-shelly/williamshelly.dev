@@ -69,13 +69,19 @@ export default function PortfolioPreview({node}) {
 
           {node.featuredImage ? <img src={node.featuredImage.file.url} className="w-100 my-2" alt={node.featuredImage.title} loading="lazy" /> : undefined }
 
-          {node.featuredImage ? <p className="text-base"><span dangerouslySetInnerHTML={{ __html: node.featuredImage.title}}></span></p> : undefined }
+          {node.featuredImage ? <p className="text-base text-center"><span dangerouslySetInnerHTML={{ __html: node.featuredImage.title}}></span></p> : undefined }
 
           {node.image02 ? <img src={node.image02.file.url} className="w-100 my-2" alt={node.image02.title} loading="lazy" /> : undefined }
 
+          {node.image02 ? <p className="text-base text-center"><span dangerouslySetInnerHTML={{ __html: node.image02.title}}></span></p> : undefined }
+
           {node.image03 ? <img src={node.image03.file.url} className="w-100 my-2" alt={node.image03.title} loading="lazy" /> : undefined }
 
+          {node.image03 ? <p className="text-base text-center"><span dangerouslySetInnerHTML={{ __html: node.image03.title}}></span></p> : undefined }
+
           {node.image04 ? <img src={node.image04.file.url} className="w-100 my-2" alt={node.image04.title} loading="lazy" /> : undefined }
+
+          {node.image04 ? <p className="text-base text-center"><span dangerouslySetInnerHTML={{ __html: node.image04.title}}></span></p> : undefined }
 
         </Modal.Body>
         <Modal.Footer />
