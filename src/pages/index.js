@@ -20,7 +20,7 @@ const IndexPage = () => {
   const content2='I design and create digital stuff.';
   const photoCredit='Florian Olivo';
   const photoLink='https://unsplash.com/photos/4hbJ-eymZ1o?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink';
-  const title = 'Freelance Designer and Front End Developer · WilliamShelly.dev'
+  const title = content.replace('.','')
   const HomePageSrcSet = heroMobile + ' 480w, ' + hero + ' 800w'
 
   return (
