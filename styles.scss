@@ -209,123 +209,189 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
 }
 
-$iconDelay: .375s;
+$homeAnimationDelay: 1.5s;
 
-.delay-05 {
-  animation-delay: $iconDelay * 1.0 + 0.125s;
-}
-.delay-10 {
-  animation-delay: $iconDelay * 1.0 + 0.25s;
-}
-
-.delay-15 {
-  animation-delay: $iconDelay * 1.0 + 0.375s;
-}
-
-.delay-20 {
-  animation-delay: $iconDelay * 1.0 + 0.5s;
-}
-
-.delay-25 {
-  animation-delay: $iconDelay * 1.0 + 0.625s;
-}
-
-.delay-30 {
-  animation-delay: $iconDelay * 1.0 + 0.75s;
-}
-
-.delay-35 {
-  animation-delay: $iconDelay * 1.0 + 0.875s;
-}
-
-.delay-40 {
-  animation-delay: $iconDelay * 1.25 + 0.0s;
-}
-
-.delay-45 {
-  animation-delay: $iconDelay * 1.25 + 0.125s;
-}
-
-.delay-50 {
-  animation-delay: $iconDelay * 1.25 + 0.25s;
-}
-
-.delay-55 {
-  animation-delay: $iconDelay * 1.25 + 0.375s;
-}
-
-.delay-60 {
-  animation-delay: $iconDelay * 1.25 + 0.5s;
-}
-
-.delay-65 {
-  animation-delay: $iconDelay * 1.25 + 0.625s;
-}
-
-.delay-70 {
-  animation-delay: $iconDelay * 1.25 + 0.75s;
-}
-
-.delay-75 {
-  animation-delay: $iconDelay * 1.25 + 0.875s;
-}
-
-.delay-80 {
-  animation-delay: $iconDelay * 1.5 + 0.0s;
-}
-
-.delay-85 {
-  animation-delay: $iconDelay * 1.5 + 0.125s;
-}
-
-.delay-90 {
-  animation-delay: $iconDelay * 1.5 + 0.25s;
-}
-
-.delay-95 {
-  animation-delay: $iconDelay * 1.5 + 0.375s;
-}
-
-.delay-100 {
-  animation-delay: $iconDelay * 1.5 + 0.5s;
-}
-
-.delay-105 {
-  animation-delay: $iconDelay * 1.5 + 0.625s;
-}
-
-.delay-110 {
-  animation-delay: $iconDelay * 1.5 + 0.75s;
-}
-
-.delay-115 {
-  animation-delay: $iconDelay * 1.5 + 0.875s;
-}
-
-.delay-120 {
-  animation-delay: $iconDelay * 1.75 + 0.0s;
+.hero-icon-container {
+  .delay-05 {
+    animation-delay: $homeAnimationDelay * 1.0 + 0.125s;
+  }
+  .delay-10 {
+    animation-delay: $homeAnimationDelay * 1.0 + 0.25s;
+  }
+  .delay-15 {
+    animation-delay: $homeAnimationDelay * 1.0 + 0.375s;
+  }
+  .delay-20 {
+    animation-delay: $homeAnimationDelay * 1.0 + 0.5s;
+  }
+  .delay-25 {
+    animation-delay: $homeAnimationDelay * 1.0 + 0.625s;
+  }
+  .delay-30 {
+    animation-delay: $homeAnimationDelay * 1.0 + 0.75s;
+  }
+  .delay-35 {
+    animation-delay: $homeAnimationDelay * 1.0 + 0.875s;
+  }
+  .delay-40 {
+    animation-delay: $homeAnimationDelay * 1.25 + 0.0s;
+  }
+  .delay-45 {
+    animation-delay: $homeAnimationDelay * 1.25 + 0.125s;
+  }
+  .delay-50 {
+    animation-delay: $homeAnimationDelay * 1.25 + 0.25s;
+  }
+  .delay-55 {
+    animation-delay: $homeAnimationDelay * 1.25 + 0.375s;
+  }
+  .delay-60 {
+    animation-delay: $homeAnimationDelay * 1.25 + 0.5s;
+  }
+  .delay-65 {
+    animation-delay: $homeAnimationDelay * 1.25 + 0.625s;
+  }
+  .delay-70 {
+    animation-delay: $homeAnimationDelay * 1.25 + 0.75s;
+  }
+  .delay-75 {
+    animation-delay: $homeAnimationDelay * 1.25 + 0.875s;
+  }
+  .delay-80 {
+    animation-delay: $homeAnimationDelay * 1.5 + 0.0s;
+  }
+  .delay-85 {
+    animation-delay: $homeAnimationDelay * 1.5 + 0.125s;
+  }
+  .delay-90 {
+    animation-delay: $homeAnimationDelay * 1.5 + 0.25s;
+  }
+  .delay-95 {
+    animation-delay: $homeAnimationDelay * 1.5 + 0.375s;
+  }
+  .delay-100 {
+    animation-delay: $homeAnimationDelay * 1.5 + 0.5s;
+  }
+  .delay-105 {
+    animation-delay: $homeAnimationDelay * 1.5 + 0.625s;
+  }
+  .delay-110 {
+    animation-delay: $homeAnimationDelay * 1.5 + 0.75s;
+  }
+  .delay-115 {
+    animation-delay: $homeAnimationDelay * 1.5 + 0.875s;
+  }
+  .delay-120 {
+    animation-delay: $homeAnimationDelay * 1.75 + 0.0s;
+  }
+  .delay-125 {
+    animation-delay: $homeAnimationDelay * 1.75 + 0.125s;
+  }
+  .delay-130 {
+    animation-delay: $homeAnimationDelay * 1.75 + 0.25s;
+  }
+  .delay-135 {
+    animation-delay: $homeAnimationDelay * 1.75 + 0.5s;
+  }
+  .delay-140 {
+    animation-delay: $homeAnimationDelay * 1.75 + 0.625s;
+  }
+  .delay-145 {
+    animation-delay: $homeAnimationDelay * 1.75 + 0.75s;
+  }
 }
 
-.delay-125 {
-  animation-delay: $iconDelay * 1.75 + 0.125s;
-}
+$aboutAnimationDelay: .5s;
 
-.delay-130 {
-  animation-delay: $iconDelay * 1.75 + 0.25s;
+.icon-gallery {
+  .delay-05 {
+    animation-delay: $aboutAnimationDelay * 1.0 + 0.125s;
+  }
+  .delay-10 {
+    animation-delay: $aboutAnimationDelay * 1.0 + 0.25s;
+  }
+  .delay-15 {
+    animation-delay: $aboutAnimationDelay * 1.0 + 0.375s;
+  }
+  .delay-20 {
+    animation-delay: $aboutAnimationDelay * 1.0 + 0.5s;
+  }
+  .delay-25 {
+    animation-delay: $aboutAnimationDelay * 1.0 + 0.625s;
+  }
+  .delay-30 {
+    animation-delay: $aboutAnimationDelay * 1.0 + 0.75s;
+  }
+  .delay-35 {
+    animation-delay: $aboutAnimationDelay * 1.0 + 0.875s;
+  }
+  .delay-40 {
+    animation-delay: $aboutAnimationDelay * 1.25 + 0.0s;
+  }
+  .delay-45 {
+    animation-delay: $aboutAnimationDelay * 1.25 + 0.125s;
+  }
+  .delay-50 {
+    animation-delay: $aboutAnimationDelay * 1.25 + 0.25s;
+  }
+  .delay-55 {
+    animation-delay: $aboutAnimationDelay * 1.25 + 0.375s;
+  }
+  .delay-60 {
+    animation-delay: $aboutAnimationDelay * 1.25 + 0.5s;
+  }
+  .delay-65 {
+    animation-delay: $aboutAnimationDelay * 1.25 + 0.625s;
+  }
+  .delay-70 {
+    animation-delay: $aboutAnimationDelay * 1.25 + 0.75s;
+  }
+  .delay-75 {
+    animation-delay: $aboutAnimationDelay * 1.25 + 0.875s;
+  }
+  .delay-80 {
+    animation-delay: $aboutAnimationDelay * 1.5 + 0.0s;
+  }
+  .delay-85 {
+    animation-delay: $aboutAnimationDelay * 1.5 + 0.125s;
+  }
+  .delay-90 {
+    animation-delay: $aboutAnimationDelay * 1.5 + 0.25s;
+  }
+  .delay-95 {
+    animation-delay: $aboutAnimationDelay * 1.5 + 0.375s;
+  }
+  .delay-100 {
+    animation-delay: $aboutAnimationDelay * 1.5 + 0.5s;
+  }
+  .delay-105 {
+    animation-delay: $aboutAnimationDelay * 1.5 + 0.625s;
+  }
+  .delay-110 {
+    animation-delay: $aboutAnimationDelay * 1.5 + 0.75s;
+  }
+  .delay-115 {
+    animation-delay: $aboutAnimationDelay * 1.5 + 0.875s;
+  }
+  .delay-120 {
+    animation-delay: $aboutAnimationDelay * 1.75 + 0.0s;
+  }
+  .delay-125 {
+    animation-delay: $aboutAnimationDelay * 1.75 + 0.125s;
+  }
+  .delay-130 {
+    animation-delay: $aboutAnimationDelay * 1.75 + 0.25s;
+  }
+  .delay-135 {
+    animation-delay: $aboutAnimationDelay * 1.75 + 0.5s;
+  }
+  .delay-140 {
+    animation-delay: $aboutAnimationDelay * 1.75 + 0.625s;
+  }
+  .delay-145 {
+    animation-delay: $aboutAnimationDelay * 1.75 + 0.75s;
+  }
 }
-
-.delay-135 {
-  animation-delay: $iconDelay * 1.75 + 0.5s;
-}
-
-.delay-140 {
-  animation-delay: $iconDelay * 1.75 + 0.625s;
-}
-
-.delay-145 {
-  animation-delay: $iconDelay * 1.75 + 0.75s;
-}
-
 
 @keyframes setOpacity {
   0% {
@@ -333,9 +399,10 @@ $iconDelay: .375s;
     opacity: 0;
     transform: scale(0.375);
   }
-  1% {
+  25% {
     visibility: visible;
     opacity: 0;
+    transform: scale(0.375);
   }
   50% {
     opacity: 0.5;
@@ -469,9 +536,8 @@ footer {
       visibility: hidden;
       transform: scale(1.1) translate(-50%,-50%);
       animation-name: setBackground;
-      animation-duration: 3s;
+      animation-duration: $homeAnimationDelay;
       animation-fill-mode: forwards;
-      animation-delay: 2.5s;
     }
     .hero-icon-container {
       position: absolute;
@@ -509,6 +575,28 @@ footer {
     width: 100%;
     height: 100vh;
     text-align: center;
+      .h1-ws {
+        visibility: hidden;
+        animation-name: fadeIn;
+        animation-duration: 0.5s;
+        animation-delay: $homeAnimationDelay * 1.75 + 1.625s;
+        animation-fill-mode: forwards;
+      }
+      .h1-freelance {
+        visibility: hidden;
+        animation-name: fadeIn;
+        animation-duration: 0.5s;
+        animation-delay: $homeAnimationDelay * 1.75 + 1.25s;
+        animation-fill-mode: forwards;
+      }
+      h3.fs-6.text-white ,
+      h4.fs-6.text-white {
+        visibility: hidden;
+        animation-name: fadeIn;
+        animation-duration: 0.5s;
+        animation-delay: $homeAnimationDelay * 1.75 + 1.25s;
+        animation-fill-mode: forwards;
+      }
       h1 , h2 , p{
         text-shadow: $shadow-10px $black-60-opacity;
       }
@@ -530,22 +618,37 @@ footer {
   1% {
     visibility: visible;
     opacity: 0;
-    filter: blur(0.075rem);
+    filter: blur(0);
   }
   50% {
     opacity: 0.5;
     visibility: visible;
-    filter: blur(0.175rem);
+    filter: blur(0);
   }
-  50% {
+  75% {
     opacity: 0.75;
     visibility: visible;
-    filter: blur(0.275rem);
+    filter: blur(0.175rem);
   }
   100% {
     opacity: 1;
     visibility: visible;
     filter: blur(0.375rem);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  50% {
+    visibility: visible;
+    opacity: 0.5;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
   }
 }
 
@@ -729,7 +832,7 @@ footer {
   box-shadow: $black-30-opacity $shadow-10px;
   animation-name: setProfilePic;
   animation-duration: .375s;
-  animation-delay: 2s;
+  animation-delay: $aboutAnimationDelay;
   animation-fill-mode: forwards;
   width: 12.5rem;
   height: auto;
